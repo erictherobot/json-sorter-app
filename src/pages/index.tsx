@@ -25,6 +25,9 @@ export default function Home() {
       </Head>
       <div className="container mx-auto py-4 px-4">
         <h1 className="text-4xl font-bold mb-4 text-white">JSON Sorter</h1>
+        <p className="text-2xl font-bold mb-4 text-white">
+          Sort JSON keys and values easily
+        </p>
         <JsonInput onJsonChange={setJsonInput} />
         <SortOptions onSort={handleSort} />
         <JsonOutput inputJson={jsonInput} sortOptions={sortOptions} />
