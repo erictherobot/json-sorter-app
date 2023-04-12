@@ -79,7 +79,7 @@ const JsonOutput: React.FC<JsonOutputProps> = ({ inputJson, sortOptions }) => {
         placeholder="Receive your SORTED JSON here"
         value={output}
         readOnly
-        rows={15}
+        rows={10}
       ></textarea>
       <button
         className="bg-black text-white font-bold py-2 px-4 rounded mt-4"
