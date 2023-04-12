@@ -18,7 +18,7 @@ const JsonInput: React.FC<JsonInputProps> = ({ onJsonChange }) => {
 
   useEffect(() => {
     onJsonChange(json);
-  }, [json]);
+  }, [json, onJsonChange]);
 
   return (
     <div className="mb-4">
