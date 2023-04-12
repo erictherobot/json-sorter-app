@@ -2,6 +2,7 @@ import { SetStateAction, useState } from "react";
 import JsonInput from "@/components/JsonInput";
 import JsonOutput from "@/components/JsonOutput";
 import SortOptions from "@/components/SortOptions";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [jsonInput, setJsonInput] = useState("");
@@ -17,6 +18,7 @@ export default function Home() {
       <JsonInput onJsonChange={setJsonInput} />
       <SortOptions onSort={handleSort} />
       <JsonOutput inputJson={jsonInput} sortOptions={sortOptions} />
+      <Footer />
     </div>
   );
 }
