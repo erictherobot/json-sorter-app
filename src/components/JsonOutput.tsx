@@ -30,6 +30,11 @@ const JsonOutput: React.FC<JsonOutputProps> = ({ inputJson, sortOptions }) => {
       return "Invalid JSON input";
     }
 
+    if (!Array.isArray(parsedJson)) {
+      alert("Input JSON should be an array");
+      return "Input JSON should be an array";
+    }
+
     const { sortBy, sortOrder, keyName } = sortOptions;
 
     const sortedJson = parsedJson.sort((a: any, b: any) => {
