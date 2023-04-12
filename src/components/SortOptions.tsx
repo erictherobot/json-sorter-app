@@ -41,7 +41,7 @@ function SortOptions({ onSort }: { onSort: Function }) {
             <option value="keyValue">Key Value</option>
           </select>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/3">
           <label
             htmlFor="sort-order"
             className="block text-sm font-medium text-white"
@@ -55,18 +55,18 @@ function SortOptions({ onSort }: { onSort: Function }) {
             value={sortOptions.sortOrder}
             onChange={handleOptionChange}
           >
-            <option value="ascending">Ascending</option>
-            <option value="descending">Descending</option>
+            <option value="ascending">Asc</option>
+            <option value="descending">Desc</option>
           </select>
         </div>
 
         {sortOptions.sortBy === "keyValue" && (
-          <div className="mt-4">
+          <div className="w-1/3">
             <label
               htmlFor="key-name"
               className="block text-sm font-medium text-white"
             >
-              Key Name (optional)
+              Key Name
             </label>
             <input
               id="key-name"
@@ -81,7 +81,7 @@ function SortOptions({ onSort }: { onSort: Function }) {
           className="bg-black text-white font-bold py-2 px-4 rounded mt-4"
           onClick={handleSortButtonClick}
         >
-          Sort JSON
+          Sort
         </button>
       </div>
     </div>
