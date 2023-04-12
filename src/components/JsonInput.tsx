@@ -31,6 +31,7 @@ const JsonInput: React.FC<JsonInputProps> = ({ onJsonChange }) => {
       <textarea
         id="json-input"
         className="mt-1 block w-full bg-gray-100 p-2 rounded-md"
+        placeholder="Paste your JSON here"
         value={json}
         onChange={handleJsonChange}
         rows={10}
