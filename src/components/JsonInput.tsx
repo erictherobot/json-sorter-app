@@ -26,7 +26,7 @@ const JsonInput: React.FC<JsonInputProps> = ({ onJsonChange }) => {
         htmlFor="json-input"
         className="block text-sm font-medium text-white"
       >
-        JSON Input (paste your JSON below)
+        JSON Input
       </label>
       <textarea
         id="json-input"
