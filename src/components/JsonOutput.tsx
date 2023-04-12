@@ -71,6 +71,7 @@ const JsonOutput: React.FC<JsonOutputProps> = ({ inputJson, sortOptions }) => {
         ref={outputRef}
         id="json-output"
         className="mt-1 block w-full bg-gray-100 p-2 rounded-md"
+        placeholder="Receive your SORTED JSON here"
         value={output}
         readOnly
         rows={15}
@@ -79,7 +80,7 @@ const JsonOutput: React.FC<JsonOutputProps> = ({ inputJson, sortOptions }) => {
         className="bg-black text-white font-bold py-2 px-4 rounded mt-4"
         onClick={copyToClipboard}
       >
-        Copy to Clipboard
+        Copy JSON to Clipboard
       </button>
     </div>
   );
