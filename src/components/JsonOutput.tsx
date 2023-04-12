@@ -9,7 +9,7 @@ interface SortOptions {
 
 interface JsonOutputProps {
   inputJson: string;
-  sortOptions: SortOptions;
+  sortOptions: SortOptions | null;
 }
 
 const JsonOutput: React.FC<JsonOutputProps> = ({ inputJson, sortOptions }) => {
